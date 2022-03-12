@@ -1,8 +1,6 @@
 from pygame import mixer
 import datetime
 import time
-import threading
-# from multiprocessing import Process
 
 
 
@@ -68,9 +66,3 @@ def physical_exercise():
         mixer.music.stop()
         with open('physical_exercise_log.txt', 'a') as file:
             file.write(f'you did physical did exercise at, {get_time()}\n')
-
-
-a = Thread(target = )
-b = Thread(target = func_2)
-a.start()
-b.start()
