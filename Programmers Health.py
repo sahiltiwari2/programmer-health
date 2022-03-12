@@ -1,3 +1,26 @@
+'''
+def Func_name():
+    """It reminds the user to do whatever he wants"""
+
+
+    time.sleep(10)
+    mixer.init()
+    mixer.music.load('name to the sond u want to set.mp3')
+    mixer.music.play(loops=-1)
+    a = input('eg if u set this for water then- did u drank water yes- drank if no- not drank \n')
+    if a == 'drank':
+        mixer.music.stop()
+        with open('water_log.txt', 'a') as file:
+            file.write(f'you drank water at, {get_time()}\n')
+    if a == 'not drank':
+        mixer.music.stop()
+        with open('water_log.txt', 'a') as file:
+            file.write(f'you did not drank water at, {get_time()}\n')
+'''
+
+
+
+
 from pygame import mixer
 import datetime
 import time
